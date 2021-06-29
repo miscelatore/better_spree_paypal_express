@@ -4,10 +4,12 @@ module Spree
     preference :login, :string
     preference :password, :string
     preference :signature, :string
-    preference :server, :string, default: 'sandbox'
     preference :solution, :string, default: 'Mark'
     preference :landing_page, :string, default: 'Billing'
     preference :logourl, :string, default: ''
+    #preference :server, :hidden, default: 'live' 
+    preference :server, :hidden, default: 'sandbox' 
+    preference :test_mode, :hidden, default: false
 
     def supports?(source)
       true
