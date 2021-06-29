@@ -4,8 +4,10 @@ module Spree
     preference :login, :string
     preference :password, :string
     preference :signature, :string
-    preference :solution, :string, default: 'Mark'
-    preference :landing_page, :string, default: 'Billing'
+    # preference :solution, :string, default: 'Mark'
+    preference :solution, :hidden, default: 'Mark'
+    # preference :landing_page, :string, default: 'Billing'
+    preference :landing_page, :hidden, default: 'Billing'
     preference :logourl, :string, default: ''
     #preference :server, :hidden, default: 'live' 
     preference :server, :hidden, default: 'sandbox' 
